@@ -1,0 +1,15 @@
+# Rendered IQ (large, reproducible from scripts)
+*.iq16
+*.iq8
+
+# Fetched media (reproducible via scripts\fetch-media.cmd)
+media/*.mp4
+media/*.mov
+media/*.mkv
+media/*.avi
+
+# Temp
+*.tmp
+
+# Claude Code per-user settings (not for sharing)
+.claude/settings.local.json
