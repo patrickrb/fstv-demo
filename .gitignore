@@ -2,11 +2,13 @@
 *.iq16
 *.iq8
 
-# Fetched media (reproducible via scripts\fetch-media.cmd)
-media/*.mp4
-media/*.mov
-media/*.mkv
-media/*.avi
+# Everything under media/ is reproducible (scripts\fetch-media.cmd and
+# scripts/fetch-clip.sh). Keep the directory but don't commit its contents.
+media/*
+!media/.gitkeep
+
+# Firmware archives + staged .frm files (reproducible; large)
+firmware/
 
 # Temp
 *.tmp
